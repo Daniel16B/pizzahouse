@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ua">
+   <head>
+      <link rel="stylesheet" href="css/style.css" />
+      <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+      <link rel="icon" type="image/x-icon" href="logo.ico" />
+      <script src="js/jquery.js"></script>
+      <script src="js/script.js"></script>
+      <title>Бронювання</title>
+   </head>
+   <body>
+      <div class="background"></div>
+      <div class="wrapper">
+         <header class="header">
+            <div class="container">
+               <div class="header__body">
+                  <a href="#" class="header__logo">
+                  </a>
+                  <div class="header__burger">
+                     <span></span>
+                  </div>
+                  <nav class="header__menu">
+                     <ul class="header__list">
+                        <li>
+                           <a href="index.html" class="header__link">Головна</a>
+                        </li>
+                        <li>
+                           <a href="aboutus.html" class="header__link">Про нас</a>
+                        </li>
+                        <li>
+                           <a href="bronuvannya.html" class="header__link">Бронювання</a>
+                        </li>
+                        <li><div class="dropdown">
+                           <a href="" class="header__link dropbtn">Меню</a>
+                           <div class="dropdown-content">
+                              <a href="pizzas.html">Піци</a>
+                              <a href="napoj.html">Напої</a>
+                              <a href="burgers.html">Бургери</a>
+                              <a href="deserts.html">Десерти</a>
+                            </div>
+                        </div>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </header>
+         <div class="form-container">
+            <div class="main-form-title">
+               <img src="img/Logo.jpg" alt="" class="form-logo">
+               <p class="form-title">Pizza House</p>
+            </div>
+            
+            <h2>Бронювання столика в ресторані</h2>
+            <form id="reservation-form">
+               <label for="name">Ім'я:</label>
+               <input type="text" id="name" name="name" required>
+      
+               <label for="phone">Номер телефону:</label>
+               <input type="tel" id="phone" name="phone" required>
+
+               <label for="phone">Адреса ресторану:</label>
+               <input type="text" id="name" name="name" required>
+      
+               <label for="people">Кількість людей:</label>
+               <select id="people" name="people" required>
+                  <option value="">Оберіть кількість людей</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+               </select>
+      
+               <label for="date">Дата:</label>
+               <input type="date" id="date" name="date" required>
+      
+               <label for="time">Час:</label>
+               <input type="time" id="time" name="time" required>
+      
+               <input type="submit" value="Забронювати">
+            </form>
+         </div>
+      </div>
+   </body>
+</html>
